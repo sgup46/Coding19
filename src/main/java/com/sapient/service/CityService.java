@@ -30,19 +30,11 @@ public class CityService {
 	public List<City> getCity( ){
 		return theCityRepository.findAll();
 	}
-	
-//	update City 
-	
-	
-//	get City by ID
+
 	public City findOne(long cityID) {
 		return theCityRepository.findById(cityID).get();
 	}
-	
-//	Delete city
-	public void deletecity(City c) {
-		theCityRepository.delete(c);
-	}
+
 	
 
 }

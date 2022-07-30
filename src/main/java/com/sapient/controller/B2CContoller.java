@@ -54,7 +54,7 @@ public class B2CContoller {
 		
 		City theCity = theCityService.findOne(ID);
 		
-		return theTheaterService.gettheaterByCityId(theCity);
+		return theTheaterService.getTheaterByCityId(theCity);
 	}
 
 	/**

@@ -14,25 +14,20 @@ public class ShowService {
 	@Autowired
 	ShowRepository theShowRepository;
 	
-//	Save the show
 	public Show save(Show show)
 	{
 		return theShowRepository.save(show);
 	}
 	
-//	Fetch all show 
 	public List<Show> fetchAllShow(){
 		return theShowRepository.findAll();
 		
 	}
-	
-//	Fetch show by ID
-	public Show fetchById(long Id) {
-		return theShowRepository.getOne(Id);
+
+	public void deleteShow(Show s) {
+		theShowRepository.delete(s);
 	}
-	
-//	Fetch show by Moive ID
-	
+
 	public List<Show> fetchByMovie(Movie m){
 		return theShowRepository.findBytheMovie(m);
 	}

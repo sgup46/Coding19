@@ -12,31 +12,22 @@ public class MovieService {
 
 	
 	@Autowired
-	MovieRepository theMoviewRepository;
+	MovieRepository movieRepository;
 	
-//	Save the Movie
 	public Movie save(Movie m) {
-		return theMoviewRepository.save(m);
+		return movieRepository.save(m);
 	}
 	
-//	FetchallMovie
 	public List<Movie> getMovie(){
-		return theMoviewRepository.findAll();
+		return movieRepository.findAll();
 	}
 	
-//	Fetch movie by ID
 	public Movie findOne(long ID){
-		return theMoviewRepository.getOne(ID);
+		return movieRepository.findById(ID).get();
 	}
-	
-//	Delete Movie
-	public void deleteMovie(Movie m) {
-		theMoviewRepository.delete(m);
-	}
-	
-//	get Movie list by theater ID
+
 	public List<Object[]> getMovieByTheaterId(long ID){
-		return theMoviewRepository.getMovieByTheateID(ID);
+		return movieRepository.getMovieByTheateID(ID);
 	}
 	
 }
