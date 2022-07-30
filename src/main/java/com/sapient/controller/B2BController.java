@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Date;
 import java.util.HashMap;
 
 @RestController
@@ -82,16 +81,7 @@ public class B2BController {
 	@PostMapping("/{ID}/{movie_id}/createShow")
 	public Show createShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
 						   @Valid @RequestBody HashMap<String, String> requestData) {
-		Theater theTheater = theTheaterService.findOne(ID);
-		Movie theMovie = theMovieService.findOne(movie_id);
-		Show theShow = new Show();
-		Show theResponseShow = new Show();
-		theShow.setShow_time(requestData.get("show_time"));
-		theShow.setShow_date(new Date());
-		theShow.setTheMovie(theMovie);
-		theShow.setTheTheater(theTheater);
-		theResponseShow = theShowService.save(theShow);
-		return theResponseShow;
+		return theShowService.createShow(ID, movie_id, requestData.get("show_time"));
 	}
 
 	/**
@@ -104,12 +94,9 @@ public class B2BController {
 	@PostMapping("/{ID}/{movie_id}/updateshow")
 	public Show updateShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
 						   @Valid @RequestBody HashMap<String, String> requestData) {
-		Theater theTheater = theTheaterService.findOne(ID);
-		Movie theMovie = theMovieService.findOne(movie_id);
-		Show theShow = theMovie.getTheShow().stream().findFirst().get();
-		theShow.setShow_time(requestData.get("show_time"));
-		Show theResponseShow = theShowService.save(theShow);
-		return theResponseShow;
+
+		return theShowService.updateShow(ID, movie_id, requestData.get("show_time"));
+
 	}
 
 	/**
@@ -120,10 +107,8 @@ public class B2BController {
 	 */
 	@PostMapping("/{ID}/{movie_id}/deleteShow")
 	public ResponseEntity<Show> deleteShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id) {
-		Theater theTheater = theTheaterService.findOne(ID);
-		Movie theMovie = theMovieService.findOne(movie_id);
-		Show theShow = theMovie.getTheShow().stream().findFirst().get();
-		theShowService.deleteShow(theShow);
+
+		theShowService.deleteShow(ID, movie_id);
 		return ResponseEntity.ok().build();
 	}
 

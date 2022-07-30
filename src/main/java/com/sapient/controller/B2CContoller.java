@@ -46,13 +46,13 @@ public class B2CContoller {
 
 	/**
 	 * get the theatre in city
-	 * @param ID
+	 * @param id
 	 * @return
 	 */
-	@GetMapping("/{ID}/theater")
-	public List<Theater> getTheaterInCity(@PathVariable(value = "ID") long ID){
+	@GetMapping("/{id}/theater")
+	public List<Theater> getTheaterInCity(@PathVariable(value = "id") long id){
 		
-		City theCity = theCityService.findOne(ID);
+		City theCity = theCityService.findOne(id);
 		
 		return theTheaterService.getTheaterByCityId(theCity);
 	}
@@ -71,13 +71,13 @@ public class B2CContoller {
 
 	/**
 	 * Get the shows by movieId
-	 * @param id
+	 * @param ID
 	 * @return
 	 */
-	@GetMapping("/movie/{id}/show")
-	public List<Show> geShowByMovieId(@PathVariable(value ="id") long id){
+	@GetMapping("/movie/{ID}/show")
+	public List<Show> geShowByMovieId(@PathVariable(value = "ID") long ID){
 		
-		Movie theMovie = theMovieService.findOne(id);
+		Movie theMovie = theMovieService.findOne(ID);
 	
 		return theShowService.fetchByMovie(theMovie);
 	}
