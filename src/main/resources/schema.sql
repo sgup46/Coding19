@@ -48,7 +48,6 @@ CREATE TABLE `theater` (
   CONSTRAINT `FKtflvxj66v6b9kicc9kwh3js3g` FOREIGN KEY (`city_c_id`) REFERENCES `city` (`city_id`)
 );
 
-
 DROP TABLE IF EXISTS `show`;
 CREATE TABLE `show` (
   `show_id` bigint NOT NULL,
