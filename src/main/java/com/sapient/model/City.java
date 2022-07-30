@@ -1,74 +1,34 @@
- package com.praveen.springboottiketbookings.model;
+ package com.sapient.model;
 
-import java.util.List;
+ import lombok.Data;
+ import org.hibernate.validator.constraints.NotBlank;
+ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-
-import org.hibernate.validator.constraints.NotBlank;
-//import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+ import javax.persistence.*;
+ import java.util.List;
 
 @Entity
-@Table(name="tableCity")
+@Table(name="CITY")
 @EntityListeners(AuditingEntityListener.class)
+@Data
 public class City {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long C_id;
+	private long city_id;
 	
 	@Column(nullable=false)
 	@NotBlank
-	private String C_name;
+	private String city_name;
 	
 	@NotBlank
-	private String C_pincode;
+	private String city_pincode;
 	
 	@NotBlank
-	private String C_state;
+	private String city_state;
 	
 	@OneToMany(mappedBy="city")
 	private List<Theater> theTheater;
-
-	public long getID() {
-		return C_id;
-	}
-
-	public void setID(long iD) {
-		C_id = iD;
-	}
-
-	public String getName() {
-		return C_name;
-	}
-
-	public void setName(String name) {
-		this.C_name = name;
-	}
-
-	public String getPincode() {
-		return C_pincode;
-	}
-
-	public void setPincode(String pincode) {
-		this.C_pincode = pincode;
-	}
-
-	public String getState() {
-		return C_state;
-	}
-
-	public void setState(String state) {
-		this.C_state = state;
-	}
-	
-	
+//
 
 }
