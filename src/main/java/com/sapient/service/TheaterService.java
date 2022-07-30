@@ -41,8 +41,10 @@ public class TheaterService {
 	public List<Theater> gettheaterByCityId(City c){
 		return theTheaterRepository.findByCity(c);
 	}
-	
-	
+
+	public List<Object[]> getTheatresByMovieAndShowTimings(long ID, String movieName, String showTime, String showDate){
+		return theTheaterRepository.getTheatresByMovieAndShowTimings(ID, movieName, showTime, showDate);
+	}
 	
 
 }

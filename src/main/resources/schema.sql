@@ -1,23 +1,12 @@
 DROP TABLE IF EXISTS `bookings` CASCADE CONSTRAINTS;
 create table bookings
 (
-   show_id bigint NOT NULL,
-  `a1` int NOT NULL,
-  `a2` int NOT NULL,
-  `a3` int NOT NULL,
-  `a4` int NOT NULL,
-  `a5` int NOT NULL,
-  `b1` int NOT NULL,
-  `b2` int NOT NULL,
-  `b3` int NOT NULL,
-  `b4` int NOT NULL,
-  `b5` int NOT NULL,
-  `c1` int NOT NULL,
-  `c2` int NOT NULL,
-  `c3` int NOT NULL,
-  `c4` int NOT NULL,
-  `c5` int NOT NULL,
-   PRIMARY KEY(show_id)
+   booking_id bigint NOT NULL,
+   `show_date` date NOT NULL,
+   `show_time` varchar(255) NOT NULL,
+   `movie_name` varchar(255) NOT NULL,
+   `seatId` varchar(255) NOT NULL,
+   PRIMARY KEY(booking_id)
 );
 
 DROP TABLE IF EXISTS `city` CASCADE CONSTRAINTS;
@@ -61,5 +50,14 @@ CREATE TABLE `show` (
   CONSTRAINT `FKsayo2xxw82i3o8h7twmmps3um` FOREIGN KEY (`the_movie_movie_id`) REFERENCES `movie` (`movie_id`)
 );
 
-
+DROP TABLE IF EXISTS `seat` CASCADE CONSTRAINTS;
+CREATE TABLE `seat` (
+  `seat_id` bigint NOT NULL,
+  `matrix_x` varchar(255) DEFAULT NULL,
+  `matrix_y` varchar(255) NOT NULL,
+  `status` int NOT NULL,
+  `the_show_show_id` bigint DEFAULT NULL,
+  PRIMARY KEY (`seat_id`),
+   CONSTRAINT `FKeg2ca18ko9iie9lo3h6ay2ura` FOREIGN KEY (`the_show_show_id`) REFERENCES `show` (`show_id`)
+);
 

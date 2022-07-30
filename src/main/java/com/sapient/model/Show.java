@@ -7,6 +7,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name="SHOW")
@@ -26,9 +27,11 @@ public class Show {
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private Movie theMovie;
 	
-	@NotBlank
 	private Date show_date;
 
 	private String show_time;
+
+	@OneToMany(mappedBy = "theShow")
+	private List<Seat> seats;
 
 }

@@ -18,13 +18,12 @@ public class City {
 	private long city_id;
 	
 	@Column(nullable=false)
-	@NotBlank
 	private String city_name;
 	
-	@NotBlank
+
 	private String city_pincode;
 	
-	@NotBlank
+
 	private String city_state;
 	
 	@OneToMany(mappedBy="city")

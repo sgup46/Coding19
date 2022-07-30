@@ -17,10 +17,8 @@ public class Movie {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long movie_id;
 	
-	@NotBlank
 	private String movie_name;
 	
-	@NotBlank
 	private String movie_director;
 	
 	

@@ -18,10 +18,10 @@ public class Theater {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long Theater_id;
 	
-	@NotBlank
+
 	private String Theater_name;
 	
-	@NotBlank
+
 	private String Theater_area;
 	
 	@JsonIgnore

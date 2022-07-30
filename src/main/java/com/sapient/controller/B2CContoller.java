@@ -1,11 +1,16 @@
 package com.sapient.controller;
 
-import com.sapient.model.*;
+import com.sapient.model.City;
+import com.sapient.model.Movie;
+import com.sapient.model.Show;
+import com.sapient.model.Theater;
 import com.sapient.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -51,17 +56,24 @@ public class B2CContoller {
 		
 		return theTheaterService.gettheaterByCityId(theCity);
 	}
-	
-//	Get Movie available on the theaters
-	
+
+	/**
+	 * Get the movies by TheatreId
+	 * @param ID
+	 * @return
+	 */
 	@GetMapping("/theater/{ID}/movie")
 	public List<Object[]> getMovieByTheaterID(@PathVariable(value = "ID") long ID){
-		
+
 		return theMovieService.getMovieByTheaterId(ID);
 	}
-	
-//	Get Available Show for a particular movie 
-	
+
+
+	/**
+	 * Get the shows by movieId
+	 * @param id
+	 * @return
+	 */
 	@GetMapping("/movie/{id}/show")
 	public List<Show> geShowByMovieId(@PathVariable(value ="id") long id){
 		
@@ -69,24 +81,18 @@ public class B2CContoller {
 	
 		return theShowService.fetchByMovie(theMovie);
 	}
-	
-//	Get the seat available for a particular Show using the show ID
-	
-	@GetMapping("/show/{id}")
-	public Bookings getAvailableSeat(@PathVariable ( value = "id") long id)
-	{
-		return theBookingsService.getAvailableSeat(id);
+
+	/**
+	 * get the theatre in city
+	 * @param ID
+	 * @return
+	 */
+	@GetMapping("/{ID}/{movieName}/{showTime}/{showDate}/theater")
+	public List<Object[]> getTheatresByMovieAndShowTimings(@PathVariable(value = "ID") long ID, @PathVariable(value = "movieName") String movieName,
+										  @PathVariable(value = "showTime") String showTime, @PathVariable(value = "showDate") String showDate){
+		return theTheaterService.getTheatresByMovieAndShowTimings(ID , movieName, showTime, showDate);
 	}
-	
-//	Book a Seat using the show id By passing the show POJO to the API 
-	
-	@PostMapping("show/{id}/bookings")
-	public Bookings bookSeatForShow(@PathVariable (value = "id") long id, @Valid @RequestBody Bookings b)
-	{
-		return theBookingsService.bookTheSeat(b);
-	}
-	
-	
+
 	
 }
 
