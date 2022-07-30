@@ -9,7 +9,7 @@
 
 @Entity
 @Table(name="CITY")
-@EntityListeners(AuditingEntityListener.class)
+//@EntityListeners(AuditingEntityListener.class)
 @Data
 public class City {
 	
