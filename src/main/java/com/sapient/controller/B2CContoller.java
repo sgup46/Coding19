@@ -26,18 +26,24 @@ public class B2CContoller {
 	
 	@Autowired
 	BookingsService theBookingsService;
-	
-//	Get the list of City where you can book the movie 
-	
+
+
+	/**
+	 * Get the list of cities
+	 * @return
+	 */
 	@GetMapping("/city")
 	public List<City> getAllCity(){
 		
 		return theCityService.getCity();
 	}
-	
-	
-//	GEt list of theater Available against a City
-	
+
+
+	/**
+	 * get the theatre in city
+	 * @param ID
+	 * @return
+	 */
 	@GetMapping("/{ID}/theater")
 	public List<Theater> getTheaterInCity(@PathVariable(value = "ID") long ID){
 		

@@ -43,9 +43,9 @@ CREATE TABLE `theater` (
   `theater_id` bigint NOT NULL,
   `theater_area` varchar(255) NOT NULL,
   `theater_name` varchar(255) NOT NULL,
-  `city_c_id` bigint DEFAULT NULL,
+  `city_city_id` bigint DEFAULT NULL,
   PRIMARY KEY (`theater_id`),
-  CONSTRAINT `FKtflvxj66v6b9kicc9kwh3js3g` FOREIGN KEY (`city_c_id`) REFERENCES `city` (`city_id`)
+  CONSTRAINT `FKtflvxj66v6b9kicc9kwh3js3g` FOREIGN KEY (`city_city_id`) REFERENCES `city` (`city_id`)
 );
 
 
@@ -53,11 +53,11 @@ DROP TABLE IF EXISTS `show` CASCADE CONSTRAINTS;
 CREATE TABLE `show` (
   `show_id` bigint NOT NULL,
   `show_time` varchar(255) NOT NULL,
-  `the_movie_m_id` bigint DEFAULT NULL,
-  `the_theater_t_id` bigint DEFAULT NULL,
+  `the_movie_movie_id` bigint DEFAULT NULL,
+  `the_theater_theater_id` bigint DEFAULT NULL,
   PRIMARY KEY (`show_id`),
-  CONSTRAINT `FKeg2ca18ko9iie9lo3h6ay2ury` FOREIGN KEY (`the_theater_t_id`) REFERENCES `theater` (`theater_id`),
-  CONSTRAINT `FKsayo2xxw82i3o8h7twmmps3um` FOREIGN KEY (`the_movie_m_id`) REFERENCES `movie` (`movie_id`)
+  CONSTRAINT `FKeg2ca18ko9iie9lo3h6ay2ury` FOREIGN KEY (`the_theater_theater_id`) REFERENCES `theater` (`theater_id`),
+  CONSTRAINT `FKsayo2xxw82i3o8h7twmmps3um` FOREIGN KEY (`the_movie_movie_id`) REFERENCES `movie` (`movie_id`)
 );
 
 

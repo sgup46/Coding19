@@ -36,7 +36,7 @@ public class CityService {
 	
 //	get City by ID
 	public City findOne(long cityID) {
-		return theCityRepository.getOne(cityID);
+		return theCityRepository.findById(cityID).get();
 	}
 	
 //	Delete city
