@@ -52,6 +52,7 @@ CREATE TABLE `theater` (
 DROP TABLE IF EXISTS `show` CASCADE CONSTRAINTS;
 CREATE TABLE `show` (
   `show_id` bigint NOT NULL,
+  `show_date` date NOT NULL,
   `show_time` varchar(255) NOT NULL,
   `the_movie_movie_id` bigint DEFAULT NULL,
   `the_theater_theater_id` bigint DEFAULT NULL,

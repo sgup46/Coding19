@@ -6,6 +6,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name="SHOW")
@@ -26,6 +27,8 @@ public class Show {
 	private Movie theMovie;
 	
 	@NotBlank
+	private Date show_date;
+
 	private String show_time;
 
 }
