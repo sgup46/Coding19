@@ -12,13 +12,21 @@ public class CityService {
 	
 	@Autowired
 	CityRepository theCityRepository;
-	
-//	to save city
+
+	/**
+	 * Will save the city instance
+	 * @param c
+	 * @return
+	 */
 	public City save(City c) {
 		return theCityRepository.save(c);
 	}
-	
-//	Get all list of  City 
+
+
+	/**
+	 * find all the cities
+	 * @return
+	 */
 	public List<City> getCity( ){
 		return theCityRepository.findAll();
 	}

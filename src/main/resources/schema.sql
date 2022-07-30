@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS `table_bookings`;
+DROP TABLE IF EXISTS `bookings` CASCADE CONSTRAINTS;
 create table bookings
 (
    show_id bigint NOT NULL,
@@ -20,7 +20,7 @@ create table bookings
    PRIMARY KEY(show_id)
 );
 
-DROP TABLE IF EXISTS `city`;
+DROP TABLE IF EXISTS `city` CASCADE CONSTRAINTS;
 CREATE TABLE `city` (
   `city_id` bigint NOT NULL,
   `city_name` varchar(255) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE `city` (
   PRIMARY KEY (`city_id`)
 );
 
-DROP TABLE IF EXISTS `movie`;
+DROP TABLE IF EXISTS `movie` CASCADE CONSTRAINTS;
 CREATE TABLE `movie` (
   `movie_id` bigint NOT NULL,
   `movie_description` varchar(255) DEFAULT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE `movie` (
   PRIMARY KEY (`movie_id`)
 );
 
-DROP TABLE IF EXISTS `theater`;
+DROP TABLE IF EXISTS `theater` CASCADE CONSTRAINTS;
 CREATE TABLE `theater` (
   `theater_id` bigint NOT NULL,
   `theater_area` varchar(255) NOT NULL,
@@ -48,7 +48,8 @@ CREATE TABLE `theater` (
   CONSTRAINT `FKtflvxj66v6b9kicc9kwh3js3g` FOREIGN KEY (`city_c_id`) REFERENCES `city` (`city_id`)
 );
 
-DROP TABLE IF EXISTS `show`;
+
+DROP TABLE IF EXISTS `show` CASCADE CONSTRAINTS;
 CREATE TABLE `show` (
   `show_id` bigint NOT NULL,
   `show_time` varchar(255) NOT NULL,
