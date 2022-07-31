@@ -19,11 +19,11 @@ public class Show {
 	@GeneratedValue
 	private long show_Id;
 	
-	@JsonIgnore
+//	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private Theater theTheater;
 	
-	@JsonIgnore
+//	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private Movie theMovie;
 	

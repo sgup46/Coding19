@@ -23,7 +23,7 @@ public class Theater {
 
 	private String theater_area;
 	
-	@JsonIgnore
+//	@JsonIgnore
 	@ManyToOne(fetch=FetchType.LAZY,cascade=CascadeType.ALL)
 	private City city;
 
