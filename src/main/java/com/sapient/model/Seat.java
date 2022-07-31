@@ -18,7 +18,7 @@ public class Seat {
 	private String matrix_y;
 	private int status;
 
-//	@JsonIgnore
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private Show theShow;
 

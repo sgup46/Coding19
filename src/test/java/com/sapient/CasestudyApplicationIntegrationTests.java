@@ -43,7 +43,7 @@ class CasestudyApplicationIntegrationTests {
 	public void testB2BContollerCreateShow() {
 		HashMap request = new HashMap();
 		request.put("show_time", "\"3:30 PM\"");
-		Show show =  b2BContoller.createShow(6L,
+		Show show =  b2BContoller.addShowToTheaterForMovie(6L,
 				10L, request);
 		Assertions.assertNotNull(show);
 		Assertions.assertNotNull(show.getShow_Id());
@@ -54,7 +54,7 @@ class CasestudyApplicationIntegrationTests {
 	public void testB2BContollerUpdateShow() {
 		HashMap request = new HashMap();
 		request.put("show_time", "\"6:30 PM\"");
-		Show show =  b2BContoller.createShow(6L,
+		Show show =  b2BContoller.addShowToTheaterForMovie(6L,
 				10L, request);
 		Assertions.assertNotNull(show);
 		Assertions.assertNotNull(show.getShow_Id());
@@ -63,7 +63,7 @@ class CasestudyApplicationIntegrationTests {
 	@Test
 	public void testB2BContolleDeleteShow() {
 		HashMap request = new HashMap();
-		b2BContoller.deleteShow(6L,
+		b2BContoller.deleteShowToTheaterForMovie(6L,
 				10L);
 	}
 }

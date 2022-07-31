@@ -69,7 +69,7 @@ public class B2BController {
 	 * @return
 	 */
 	@PostMapping("/{city}/theater")
-	public Theater createTheater(@PathVariable(value="city") long city, @Valid @RequestBody HashMap<String, String> requestData) {
+	public Theater createTheaterInCity(@PathVariable(value="city") long city, @Valid @RequestBody HashMap<String, String> requestData) {
 		Theater theTheater = new Theater();
 		theTheater.setTheater_name(requestData.get("name"));
 		theTheater.setTheater_area(requestData.get("area"));
@@ -87,8 +87,8 @@ public class B2BController {
 	 * @return
 	 */
 	@PostMapping("/{ID}/{movie_id}/createShow")
-	public Show createShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
-						   @Valid @RequestBody HashMap<String, String> requestData) {
+	public Show addShowToTheaterForMovie(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
+						@Valid @RequestBody HashMap<String, String> requestData) {
 		return ((ShowService)theShowService).createShow(ID, movie_id, requestData.get("show_time"));
 	}
 
@@ -100,8 +100,8 @@ public class B2BController {
 	 * @return
 	 */
 	@PostMapping("/{ID}/{movie_id}/updateshow")
-	public Show updateShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
-						   @Valid @RequestBody HashMap<String, String> requestData) {
+	public Show updateShowToTheaterForMovie(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
+											@Valid @RequestBody HashMap<String, String> requestData) {
 
 		return ((ShowService)theShowService).updateShow(ID, movie_id, requestData.get("show_time"));
 
@@ -114,7 +114,7 @@ public class B2BController {
 	 * @return
 	 */
 	@PostMapping("/{ID}/{movie_id}/deleteShow")
-	public ResponseEntity<Show> deleteShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id) {
+	public ResponseEntity<Show> deleteShowToTheaterForMovie(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id) {
 
 		((ShowService)theShowService).deleteShow(ID, movie_id);
 		return ResponseEntity.ok().build();

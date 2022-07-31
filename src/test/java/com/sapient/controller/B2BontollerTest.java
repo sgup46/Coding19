@@ -48,7 +48,7 @@ public class B2BontollerTest {
 
         Mockito.when(theShowService.createShow(Mockito.anyLong(), Mockito.anyLong(), Mockito.anyString())).thenReturn(s);
         b2BContoller.setTheShowService(theShowService);
-        Show show =  b2BContoller.createShow(6L,
+        Show show =  b2BContoller.addShowToTheaterForMovie(6L,
                 10L, request);
         Assertions.assertNotNull(show);
         Assertions.assertNotNull(show.getShow_Id());
@@ -66,7 +66,7 @@ public class B2BontollerTest {
 
         Mockito.when(theShowService.updateShow(Mockito.anyLong(), Mockito.anyLong(), Mockito.anyString())).thenReturn(s);
         b2BContoller.setTheShowService(theShowService);
-        Show show =  b2BContoller.updateShow(6L,
+        Show show =  b2BContoller.updateShowToTheaterForMovie(6L,
                 10L, request);
         Assertions.assertNotNull(show);
         Assertions.assertNotNull(show.getShow_Id());
@@ -83,7 +83,7 @@ public class B2BontollerTest {
 
         Mockito.when(theShowService.deleteShow(Mockito.anyLong(), Mockito.anyLong())).thenReturn(true);
         b2BContoller.setTheShowService(theShowService);
-        b2BContoller.deleteShow(6L,
+        b2BContoller.deleteShowToTheaterForMovie(6L,
                 10L);
 
     }
