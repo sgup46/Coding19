@@ -5,6 +5,7 @@ import com.sapient.model.Movie;
 import com.sapient.model.Show;
 import com.sapient.model.Theater;
 import com.sapient.service.*;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/user")
+@Data
 public class B2CContoller {
 
 	@Autowired

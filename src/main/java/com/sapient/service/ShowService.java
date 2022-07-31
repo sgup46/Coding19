@@ -44,11 +44,12 @@ public class ShowService {
 		
 	}
 
-	public void deleteShow(long id, long movie_id) {
+	public boolean deleteShow(long id, long movie_id) {
 		Theater theTheater = theaterServiceDAO.findOne(id);
 		Movie theMovie = movieServiceDAO.findOne(movie_id);
 		Show theShow = theMovie.getTheShow().stream().findFirst().get();
 		showServiceDAO.delete(theShow);
+		return true;
 	}
 
 	public List<Show> fetchByMovie(Movie m){
