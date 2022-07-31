@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class BookingsServiceDAO {
+public class BookingsServiceDAO implements IServiceDAO{
 
 	@Autowired
 	BookingsRepository theBookingsRepository;

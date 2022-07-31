@@ -1,8 +1,11 @@
 package com.sapient.service;
 
 import com.sapient.dao.CityServiceDAO;
+import com.sapient.dao.IServiceDAO;
 import com.sapient.model.City;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -10,10 +13,12 @@ import java.util.List;
 
 @Service
 @Transactional
+@Data
 public class CityService implements IService {
 	
 	@Autowired
-	CityServiceDAO cityServiceDAO;
+	@Qualifier("cityServiceDAO")
+	IServiceDAO cityServiceDAO;
 
 	/**
 	 * Will save the city instance
@@ -21,7 +26,7 @@ public class CityService implements IService {
 	 * @return
 	 */
 	public City save(City c) {
-		return cityServiceDAO.save(c);
+		return ((CityServiceDAO)cityServiceDAO).save(c);
 	}
 
 
@@ -30,11 +35,11 @@ public class CityService implements IService {
 	 * @return
 	 */
 	public List<City> getCity( ){
-		return cityServiceDAO.getCity();
+		return ((CityServiceDAO)cityServiceDAO).getCity();
 	}
 
 	public City findOne(long cityID) {
-		return cityServiceDAO.findOne(cityID);
+		return ((CityServiceDAO)cityServiceDAO).findOne(cityID);
 	}
 
 	

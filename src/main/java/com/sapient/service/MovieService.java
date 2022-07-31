@@ -1,9 +1,12 @@
 package com.sapient.service;
 
+import com.sapient.dao.CityServiceDAO;
+import com.sapient.dao.IServiceDAO;
 import com.sapient.dao.MovieServiceDAO;
 import com.sapient.model.Movie;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -19,22 +22,23 @@ public class MovieService implements IService {
 
 	
 	@Autowired
-	MovieServiceDAO movieServiceDAO;
+	@Qualifier("movieServiceDAO")
+	IServiceDAO movieServiceDAO;
 	
 	public Movie save(Movie m) {
-		return movieServiceDAO.save(m);
+		return ((MovieServiceDAO)movieServiceDAO).save(m);
 	}
 	
 	public List<Movie> getMovie(){
-		return movieServiceDAO.getMovie();
+		return ((MovieServiceDAO)movieServiceDAO).getMovie();
 	}
 	
 	public Movie findOne(long ID){
-		return movieServiceDAO.findOne(ID);
+		return ((MovieServiceDAO)movieServiceDAO).findOne(ID);
 	}
 
 	public List<Movie> getMovieByTheaterId(long ID){
-		List<Object[]> movies =  movieServiceDAO.getMovieByTheaterId(ID);
+		List<Object[]> movies =  ((MovieServiceDAO)movieServiceDAO).getMovieByTheaterId(ID);
 		List<Movie> listMovies = new ArrayList<>();
 		if (!CollectionUtils.isEmpty(movies)) {
 			movies.stream().forEach( movieObjectArray -> {

@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class ShowServiceDAO {
+public class ShowServiceDAO implements IServiceDAO{
 
 
 	@Autowired

@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class TheaterServiceDAO {
+public class TheaterServiceDAO implements IServiceDAO{
 	
 	@Autowired
 	TheaterRepository theTheaterRepository;
