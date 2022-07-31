@@ -2,6 +2,7 @@ package com.sapient.service;
 
 import com.sapient.dao.MovieServiceDAO;
 import com.sapient.model.Movie;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -13,7 +14,8 @@ import java.util.List;
 
 @Service
 @Transactional
-public class MovieService {
+@Data
+public class MovieService implements IService {
 
 	
 	@Autowired

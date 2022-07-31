@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class ShowService {
+public class ShowService implements IService {
 
 
 	@Autowired

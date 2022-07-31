@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class CityService {
+public class CityService implements IService {
 	
 	@Autowired
 	CityServiceDAO cityServiceDAO;

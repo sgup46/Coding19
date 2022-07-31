@@ -7,6 +7,7 @@ import com.sapient.model.Theater;
 import com.sapient.service.*;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,19 +21,24 @@ import java.util.List;
 public class B2CContoller {
 
 	@Autowired
-	CityService theCityService;
-	
+	@Qualifier("cityService")
+	IService theCityService;
+
 	@Autowired
-	MovieService theMovieService;
-	
+	@Qualifier("movieService")
+	IService theMovieService;
+
 	@Autowired
-	TheaterService theTheaterService;
-	
+	@Qualifier("theaterService")
+	IService theTheaterService;
+
 	@Autowired
-	ShowService theShowService;
-	
+	@Qualifier("showService")
+	IService theShowService;
+
 	@Autowired
-	BookingsService theBookingsService;
+	@Qualifier("bookingsService")
+	IService theBookingsService;
 
 
 	/**
@@ -42,7 +48,7 @@ public class B2CContoller {
 	@GetMapping("/city")
 	public List<City> getAllCity(){
 		
-		return theCityService.getCity();
+		return ((CityService)theCityService).getCity();
 	}
 
 
@@ -54,9 +60,9 @@ public class B2CContoller {
 	@GetMapping("/{id}/theater")
 	public List<Theater> getTheaterInCity(@PathVariable(value = "id") long id){
 		
-		City theCity = theCityService.findOne(id);
+		City theCity = ((CityService)theCityService).findOne(id);
 		
-		return theTheaterService.getTheaterByCityId(theCity);
+		return ((TheaterService)theTheaterService).getTheaterByCityId(theCity);
 	}
 
 	/**
@@ -67,7 +73,7 @@ public class B2CContoller {
 	@GetMapping("/theater/{ID}/movie")
 	public List<Movie> getMovieByTheaterID(@PathVariable(value = "ID") long ID){
 
-		return theMovieService.getMovieByTheaterId(ID);
+		return ((MovieService)theMovieService).getMovieByTheaterId(ID);
 	}
 
 
@@ -79,9 +85,9 @@ public class B2CContoller {
 	@GetMapping("/movie/{ID}/show")
 	public List<Show> geShowByMovieId(@PathVariable(value = "ID") long ID){
 		
-		Movie theMovie = theMovieService.findOne(ID);
+		Movie theMovie = ((MovieService)theMovieService).findOne(ID);
 	
-		return theShowService.fetchByMovie(theMovie);
+		return ((ShowService)theShowService).fetchByMovie(theMovie);
 	}
 
 	/**
@@ -92,7 +98,7 @@ public class B2CContoller {
 	@GetMapping("/{ID}/{movieName}/{showTime}/{showDate}/theater")
 	public List<Theater> getTheatresByMovieAndShowTimings(@PathVariable(value = "ID") long ID, @PathVariable(value = "movieName") String movieName,
 										  @PathVariable(value = "showTime") String showTime, @PathVariable(value = "showDate") String showDate){
-		return theTheaterService.getTheatresByMovieAndShowTimings(ID , movieName, showTime, showDate);
+		return ((TheaterService)theTheaterService).getTheatresByMovieAndShowTimings(ID , movieName, showTime, showDate);
 	}
 
 	

@@ -8,6 +8,7 @@ import com.sapient.model.Theater;
 import com.sapient.service.*;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,19 +21,24 @@ import java.util.HashMap;
 public class B2BController {
 	
 	@Autowired
-	CityService theCityService;
+	@Qualifier("cityService")
+	IService theCityService;
 	
 	@Autowired
-	MovieService theMovieService;
+	@Qualifier("movieService")
+	IService theMovieService;
 	
 	@Autowired
-	TheaterService theTheaterService;
+	@Qualifier("theaterService")
+	IService theTheaterService;
 	
 	@Autowired
-	ShowService theShowService;
+	@Qualifier("showService")
+	IService theShowService;
 	
 	@Autowired
-	BookingsService theBookingsService;
+	@Qualifier("bookingsService")
+	IService theBookingsService;
 
 
 	/**
@@ -42,7 +48,7 @@ public class B2BController {
 	 */
 	@PostMapping("/city")
 	public City createCity(@Valid @RequestBody City c) {
-		return theCityService.save(c);
+		return ((CityService)theCityService).save(c);
 	}
 
 
@@ -53,7 +59,7 @@ public class B2BController {
 	 */
 	@PostMapping("/movie")
 	public Movie createMovie(@Valid @RequestBody Movie m) {
-		return theMovieService.save(m);
+		return ((MovieService)theMovieService).save(m);
 	}
 
 	/**
@@ -67,9 +73,9 @@ public class B2BController {
 		Theater theTheater = new Theater();
 		theTheater.setTheater_name(requestData.get("name"));
 		theTheater.setTheater_area(requestData.get("area"));
-		City theCity = theCityService.findOne(city);
+		City theCity = ((CityService)theCityService).findOne(city);
 		theTheater.setCity(theCity);
-		return theTheaterService.save(theTheater);
+		return ((TheaterService)theTheaterService).save(theTheater);
 	}
 
 
@@ -83,7 +89,7 @@ public class B2BController {
 	@PostMapping("/{ID}/{movie_id}/createShow")
 	public Show createShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
 						   @Valid @RequestBody HashMap<String, String> requestData) {
-		return theShowService.createShow(ID, movie_id, requestData.get("show_time"));
+		return ((ShowService)theShowService).createShow(ID, movie_id, requestData.get("show_time"));
 	}
 
 	/**
@@ -97,7 +103,7 @@ public class B2BController {
 	public Show updateShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id,
 						   @Valid @RequestBody HashMap<String, String> requestData) {
 
-		return theShowService.updateShow(ID, movie_id, requestData.get("show_time"));
+		return ((ShowService)theShowService).updateShow(ID, movie_id, requestData.get("show_time"));
 
 	}
 
@@ -110,7 +116,7 @@ public class B2BController {
 	@PostMapping("/{ID}/{movie_id}/deleteShow")
 	public ResponseEntity<Show> deleteShow(@PathVariable(value = "ID") long ID, @PathVariable(value = "movie_id") long movie_id) {
 
-		theShowService.deleteShow(ID, movie_id);
+		((ShowService)theShowService).deleteShow(ID, movie_id);
 		return ResponseEntity.ok().build();
 	}
 
