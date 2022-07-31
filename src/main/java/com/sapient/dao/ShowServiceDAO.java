@@ -7,8 +7,6 @@ import com.sapient.repository.ShowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -46,7 +44,7 @@ public class ShowServiceDAO implements IServiceDAO{
 	public Show updateShow(long id, long movie_id, String show_time) {
 		Theater theTheater = theTheaterService.findOne(id);
 		Movie theMovie = theMovieService.findOne(movie_id);
-		Show theShow = theMovie.getTheShow().stream().findFirst().get();
+		Show theShow = theMovie.getTheShows().stream().findFirst().get();
 		theShow.setShow_time(show_time);
 		return theShow;
 	}

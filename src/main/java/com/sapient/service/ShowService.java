@@ -54,7 +54,7 @@ public class ShowService implements IService {
 	public boolean deleteShow(long id, long movie_id) {
 		Theater theTheater = ((TheaterServiceDAO)theaterServiceDAO).findOne(id);
 		Movie theMovie = ((MovieServiceDAO)movieServiceDAO).findOne(movie_id);
-		Show theShow = theMovie.getTheShow().stream().findFirst().get();
+		Show theShow = theMovie.getTheShows().stream().findFirst().get();
 		((ShowServiceDAO)showServiceDAO).delete(theShow);
 		return true;
 	}
@@ -67,7 +67,7 @@ public class ShowService implements IService {
 	public Show updateShow(long id, long movie_id, String show_time) {
 		Theater theTheater = ((TheaterServiceDAO)theaterServiceDAO).findOne(id);
 		Movie theMovie = ((MovieServiceDAO)movieServiceDAO).findOne(movie_id);
-		Show theShow = theMovie.getTheShow().stream().findFirst().get();
+		Show theShow = theMovie.getTheShows().stream().findFirst().get();
 		theShow.setShow_time(show_time);
 		return theShow;
 	}

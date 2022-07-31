@@ -1,8 +1,6 @@
  package com.sapient.model;
 
  import lombok.Data;
- import org.hibernate.validator.constraints.NotBlank;
- import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
  import javax.persistence.*;
  import java.util.List;
@@ -27,7 +25,7 @@ public class City {
 	private String city_state;
 	
 	@OneToMany(mappedBy="city")
-	private List<Theater> theTheater;
+	private List<Theater> theTheaters;
 //
 
 }

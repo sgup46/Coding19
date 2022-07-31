@@ -1,7 +1,6 @@
 package com.sapient.model;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
@@ -25,6 +24,6 @@ public class Movie {
 	private String movie_description;
 	
 	@OneToMany(mappedBy = "theMovie")
-	public List<Show> theShow;
+	public List<Show> theShows;
 
 }
