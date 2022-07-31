@@ -1,7 +1,7 @@
-package com.sapient.service;
+package com.sapient.dao;
 
-import com.sapient.dao.BookingsServiceDAO;
 import com.sapient.model.Booking;
+import com.sapient.repository.BookingsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,19 +9,18 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class BookingsService {
+public class BookingsServiceDAO {
 
 	@Autowired
-	BookingsServiceDAO bookingsServiceDAO;
+	BookingsRepository theBookingsRepository;
 	
 	public Booking getAvailableSeat(long showID) {
 
-		return bookingsServiceDAO.getAvailableSeat(showID);
+		return theBookingsRepository.getOne(showID);
 	}
 	
 	public Booking bookTheSeat(Booking book) {
-
-		return bookingsServiceDAO.bookTheSeat(book);
+		return theBookingsRepository.save(book);
 	}
 	
 }

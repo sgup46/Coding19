@@ -1,7 +1,7 @@
-package com.sapient.service;
+package com.sapient.dao;
 
-import com.sapient.dao.CityServiceDAO;
 import com.sapient.model.City;
+import com.sapient.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,10 @@ import java.util.List;
 
 @Service
 @Transactional
-public class CityService {
+public class CityServiceDAO {
 	
 	@Autowired
-	CityServiceDAO cityServiceDAO;
+	CityRepository theCityRepository;
 
 	/**
 	 * Will save the city instance
@@ -21,7 +21,7 @@ public class CityService {
 	 * @return
 	 */
 	public City save(City c) {
-		return cityServiceDAO.save(c);
+		return theCityRepository.save(c);
 	}
 
 
@@ -30,11 +30,11 @@ public class CityService {
 	 * @return
 	 */
 	public List<City> getCity( ){
-		return cityServiceDAO.getCity();
+		return theCityRepository.findAll();
 	}
 
 	public City findOne(long cityID) {
-		return cityServiceDAO.findOne(cityID);
+		return theCityRepository.findById(cityID).get();
 	}
 
 	

@@ -2,7 +2,6 @@ package com.sapient.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
@@ -16,13 +15,13 @@ public class Theater {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long Theater_id;
+	private long theater_id;
 	
 
-	private String Theater_name;
+	private String theater_name;
 	
 
-	private String Theater_area;
+	private String theater_area;
 	
 	@JsonIgnore
 	@ManyToOne(fetch=FetchType.LAZY,cascade=CascadeType.ALL)

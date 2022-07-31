@@ -1,7 +1,7 @@
-package com.sapient.service;
+package com.sapient.dao;
 
-import com.sapient.dao.MovieServiceDAO;
 import com.sapient.model.Movie;
+import com.sapient.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,26 +10,26 @@ import java.util.List;
 
 @Service
 @Transactional
-public class MovieService {
+public class MovieServiceDAO {
 
 	
 	@Autowired
-	MovieServiceDAO movieServiceDAO;
+	MovieRepository movieRepository;
 	
 	public Movie save(Movie m) {
-		return movieServiceDAO.save(m);
+		return movieRepository.save(m);
 	}
 	
 	public List<Movie> getMovie(){
-		return movieServiceDAO.getMovie();
+		return movieRepository.findAll();
 	}
 	
 	public Movie findOne(long ID){
-		return movieServiceDAO.findOne(ID);
+		return movieRepository.findById(ID).get();
 	}
 
 	public List<Object[]> getMovieByTheaterId(long ID){
-		return movieServiceDAO.getMovieByTheaterId(ID);
+		return movieRepository.getMovieByTheateID(ID);
 	}
 	
 }
