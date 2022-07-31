@@ -5,8 +5,11 @@ import com.sapient.model.City;
 import com.sapient.model.Theater;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.transaction.Transactional;
+import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -31,8 +34,19 @@ public class TheaterService {
 		return theaterServiceDAO.getTheaterByCityId(c);
 	}
 
-	public List<Object[]> getTheatresByMovieAndShowTimings(long ID, String movieName, String showTime, String showDate){
-		return theaterServiceDAO.getTheatresByMovieAndShowTimings(ID, movieName, showTime, showDate);
+	public List<Theater> getTheatresByMovieAndShowTimings(long ID, String movieName, String showTime, String showDate){
+		List<Object[]> theatres =  theaterServiceDAO.getTheatresByMovieAndShowTimings(ID, movieName, showTime, showDate);
+		List<Theater> listTheatres = new ArrayList<>();
+		if (!CollectionUtils.isEmpty(theatres)) {
+			theatres.stream().forEach( theatreObjectArray -> {
+                 Theater t = new Theater();
+				 t.setTheater_id(((BigInteger) theatreObjectArray[0]).longValue());
+				t.setTheater_name((String) theatreObjectArray[1]);
+				t.setTheater_area((String) theatreObjectArray[2]);
+				listTheatres.add(t);
+			});
+		}
+		return listTheatres;
 	}
 	
 

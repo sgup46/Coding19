@@ -3,6 +3,7 @@ package com.sapient;
 import com.sapient.controller.B2BController;
 import com.sapient.controller.B2CContoller;
 import com.sapient.model.Show;
+import com.sapient.model.Theater;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -30,12 +31,12 @@ class CasestudyApplicationIntegrationTests {
 
 	@Test
 	public void testB2CContollerGetTheatresByMovieAndShowTimings() {
-		List<Object[]> theatres =  b2CContoller.getTheatresByMovieAndShowTimings(1, "WAR 3", "6:00 PM", "2022-07-31");
-		Assertions.assertNotNull(theatres.get(0)[0]);
-		Assertions.assertNotNull(theatres.get(0)[1]);
-		Assertions.assertNotNull(theatres.get(0)[1].equals("Finox mall"));
-		Assertions.assertNotNull(theatres.get(0)[2]);
-		Assertions.assertNotNull(theatres.get(0)[2].equals("Koramangala"));
+		List<Theater> theatres =  b2CContoller.getTheatresByMovieAndShowTimings(1, "WAR 3", "6:00 PM", "2022-07-31");
+		Assertions.assertNotNull(theatres.get(0).getTheater_id());
+		Assertions.assertNotNull(theatres.get(0).getTheater_name());
+		Assertions.assertNotNull(theatres.get(0).getTheater_name().equals("Finox mall"));
+		Assertions.assertNotNull(theatres.get(0).getTheater_area());
+		Assertions.assertNotNull(theatres.get(0).getTheater_area().equals("Koramangala"));
 	}
 
 	@Test

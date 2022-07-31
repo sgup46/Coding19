@@ -88,7 +88,7 @@ public class B2CContoller {
 	 * @return
 	 */
 	@GetMapping("/{ID}/{movieName}/{showTime}/{showDate}/theater")
-	public List<Object[]> getTheatresByMovieAndShowTimings(@PathVariable(value = "ID") long ID, @PathVariable(value = "movieName") String movieName,
+	public List<Theater> getTheatresByMovieAndShowTimings(@PathVariable(value = "ID") long ID, @PathVariable(value = "movieName") String movieName,
 										  @PathVariable(value = "showTime") String showTime, @PathVariable(value = "showDate") String showDate){
 		return theTheaterService.getTheatresByMovieAndShowTimings(ID , movieName, showTime, showDate);
 	}
