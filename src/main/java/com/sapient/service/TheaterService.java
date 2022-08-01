@@ -6,6 +6,8 @@ import com.sapient.dao.TheaterServiceDAO;
 import com.sapient.model.City;
 import com.sapient.model.Theater;
 import lombok.Data;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -20,7 +22,8 @@ import java.util.List;
 @Transactional
 @Data
 public class TheaterService implements IService {
-	
+
+	Logger logger = LoggerFactory.getLogger(TheaterService.class);
 	@Autowired
 	@Qualifier("theaterServiceDAO")
 	IServiceDAO theaterServiceDAO;
@@ -42,6 +45,7 @@ public class TheaterService implements IService {
 
 	public List<Theater> getTheatresByMovieAndShowTimings(long ID, String movieName, String showTime, String showDate){
 		List<Object[]> theatres =  ((TheaterServiceDAO)theaterServiceDAO).getTheatresByMovieAndShowTimings(ID, movieName, showTime, showDate);
+		logger.info("Theater Size received:" + theatres.size());
 		List<Theater> listTheatres = new ArrayList<>();
 		if (!CollectionUtils.isEmpty(theatres)) {
 			theatres.stream().forEach( theatreObjectArray -> {

@@ -1,0 +1,475 @@
+2022-08-01 22:01:01,574 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting CasestudyAppApplication on LAPTOP-ETFPH0D4 with PID 27156 (D:\PS Java Domain Exercise\Coding19\target\classes started by susha in D:\PS Java Domain Exercise\Coding19)
+2022-08-01 22:01:01,580 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2022-08-01 22:01:01,582 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 22:01:01,725 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 22:01:01,726 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 22:01:04,427 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 22:01:04,635 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 173ms. Found 5 JPA repository interfaces.
+2022-08-01 22:01:09,417 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-08-01 22:01:09,449 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2022-08-01 22:01:09,451 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 22:01:09,452 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-08-01 22:01:09,812 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 22:01:09,813 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8086 ms
+2022-08-01 22:01:10,401 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-01 22:01:10,873 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-01 22:01:11,121 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-01 22:01:13,230 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-08-01 22:01:13,524 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 22:01:13,685 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.15.Final
+2022-08-01 22:01:14,042 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-08-01 22:01:14,138 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration boolean -> org.hibernate.type.BooleanType@52c9228a
+2022-08-01 22:01:14,139 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration boolean -> org.hibernate.type.BooleanType@52c9228a
+2022-08-01 22:01:14,142 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@52c9228a
+2022-08-01 22:01:14,144 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@52dc3357
+2022-08-01 22:01:14,145 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration true_false -> org.hibernate.type.TrueFalseType@114e6a32
+2022-08-01 22:01:14,147 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration yes_no -> org.hibernate.type.YesNoType@6df2823b
+2022-08-01 22:01:14,151 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration byte -> org.hibernate.type.ByteType@532f5481
+2022-08-01 22:01:14,152 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration byte -> org.hibernate.type.ByteType@532f5481
+2022-08-01 22:01:14,153 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@532f5481
+2022-08-01 22:01:14,156 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration character -> org.hibernate.type.CharacterType@3879b7ee
+2022-08-01 22:01:14,157 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration char -> org.hibernate.type.CharacterType@3879b7ee
+2022-08-01 22:01:14,157 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3879b7ee
+2022-08-01 22:01:14,160 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration short -> org.hibernate.type.ShortType@23cb8f24
+2022-08-01 22:01:14,160 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration short -> org.hibernate.type.ShortType@23cb8f24
+2022-08-01 22:01:14,161 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@23cb8f24
+2022-08-01 22:01:14,163 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration integer -> org.hibernate.type.IntegerType@30503ff2
+2022-08-01 22:01:14,164 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration int -> org.hibernate.type.IntegerType@30503ff2
+2022-08-01 22:01:14,164 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@30503ff2
+2022-08-01 22:01:14,172 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration long -> org.hibernate.type.LongType@4a026256
+2022-08-01 22:01:14,172 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration long -> org.hibernate.type.LongType@4a026256
+2022-08-01 22:01:14,172 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Long -> org.hibernate.type.LongType@4a026256
+2022-08-01 22:01:14,176 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration float -> org.hibernate.type.FloatType@3ba46b42
+2022-08-01 22:01:14,177 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration float -> org.hibernate.type.FloatType@3ba46b42
+2022-08-01 22:01:14,177 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3ba46b42
+2022-08-01 22:01:14,181 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration double -> org.hibernate.type.DoubleType@6378ce87
+2022-08-01 22:01:14,183 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration double -> org.hibernate.type.DoubleType@6378ce87
+2022-08-01 22:01:14,183 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6378ce87
+2022-08-01 22:01:14,185 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@70c2769a
+2022-08-01 22:01:14,186 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@70c2769a
+2022-08-01 22:01:14,188 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7749a806
+2022-08-01 22:01:14,189 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7749a806
+2022-08-01 22:01:14,190 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration string -> org.hibernate.type.StringType@2fb0c617
+2022-08-01 22:01:14,192 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.String -> org.hibernate.type.StringType@2fb0c617
+2022-08-01 22:01:14,193 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5d0d22bf
+2022-08-01 22:01:14,194 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7becd880
+2022-08-01 22:01:14,197 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration url -> org.hibernate.type.UrlType@572144fb
+2022-08-01 22:01:14,198 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.net.URL -> org.hibernate.type.UrlType@572144fb
+2022-08-01 22:01:14,202 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration Duration -> org.hibernate.type.DurationType@15361cec
+2022-08-01 22:01:14,203 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@15361cec
+2022-08-01 22:01:14,206 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration Instant -> org.hibernate.type.InstantType@1111ec32
+2022-08-01 22:01:14,207 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1111ec32
+2022-08-01 22:01:14,209 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4b747a43
+2022-08-01 22:01:14,211 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4b747a43
+2022-08-01 22:01:14,214 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1067ae3c
+2022-08-01 22:01:14,215 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1067ae3c
+2022-08-01 22:01:14,217 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@61e2b62
+2022-08-01 22:01:14,219 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@61e2b62
+2022-08-01 22:01:14,223 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@72876ed4
+2022-08-01 22:01:14,224 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@72876ed4
+2022-08-01 22:01:14,229 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3eb40b89
+2022-08-01 22:01:14,230 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3eb40b89
+2022-08-01 22:01:14,237 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c523c3c
+2022-08-01 22:01:14,238 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c523c3c
+2022-08-01 22:01:14,245 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration date -> org.hibernate.type.DateType@2f634784
+2022-08-01 22:01:14,246 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Date -> org.hibernate.type.DateType@2f634784
+2022-08-01 22:01:14,248 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration time -> org.hibernate.type.TimeType@44bc7a5
+2022-08-01 22:01:14,249 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@44bc7a5
+2022-08-01 22:01:14,251 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration timestamp -> org.hibernate.type.TimestampType@ea37938
+2022-08-01 22:01:14,252 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@ea37938
+2022-08-01 22:01:14,252 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@ea37938
+2022-08-01 22:01:14,254 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@13d61c3f
+2022-08-01 22:01:14,257 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration calendar -> org.hibernate.type.CalendarType@3070f88e
+2022-08-01 22:01:14,258 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3070f88e
+2022-08-01 22:01:14,258 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3070f88e
+2022-08-01 22:01:14,263 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4096d5cc
+2022-08-01 22:01:14,265 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@7a4a6c7d
+2022-08-01 22:01:14,270 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration locale -> org.hibernate.type.LocaleType@26885887
+2022-08-01 22:01:14,272 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@26885887
+2022-08-01 22:01:14,275 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration currency -> org.hibernate.type.CurrencyType@371c491e
+2022-08-01 22:01:14,275 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@371c491e
+2022-08-01 22:01:14,277 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration timezone -> org.hibernate.type.TimeZoneType@35b1c660
+2022-08-01 22:01:14,278 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@35b1c660
+2022-08-01 22:01:14,280 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration class -> org.hibernate.type.ClassType@70b3421c
+2022-08-01 22:01:14,281 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@70b3421c
+2022-08-01 22:01:14,284 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7ee8142b
+2022-08-01 22:01:14,284 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7ee8142b
+2022-08-01 22:01:14,286 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@60255aa9
+2022-08-01 22:01:14,290 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration binary -> org.hibernate.type.BinaryType@764b57b5
+2022-08-01 22:01:14,292 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration byte[] -> org.hibernate.type.BinaryType@764b57b5
+2022-08-01 22:01:14,292 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration [B -> org.hibernate.type.BinaryType@764b57b5
+2022-08-01 22:01:14,295 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1a9ef20a
+2022-08-01 22:01:14,295 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1a9ef20a
+2022-08-01 22:01:14,296 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1a9ef20a
+2022-08-01 22:01:14,298 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration row_version -> org.hibernate.type.RowVersionType@5a746e51
+2022-08-01 22:01:14,299 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration image -> org.hibernate.type.ImageType@68fbb953
+2022-08-01 22:01:14,304 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration characters -> org.hibernate.type.CharArrayType@5878a170
+2022-08-01 22:01:14,304 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration char[] -> org.hibernate.type.CharArrayType@5878a170
+2022-08-01 22:01:14,305 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration [C -> org.hibernate.type.CharArrayType@5878a170
+2022-08-01 22:01:14,307 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3ecb572d
+2022-08-01 22:01:14,308 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3ecb572d
+2022-08-01 22:01:14,308 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3ecb572d
+2022-08-01 22:01:14,309 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration text -> org.hibernate.type.TextType@90d5e86
+2022-08-01 22:01:14,310 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration ntext -> org.hibernate.type.NTextType@6a91d10d
+2022-08-01 22:01:14,313 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration blob -> org.hibernate.type.BlobType@58bbb662
+2022-08-01 22:01:14,314 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@58bbb662
+2022-08-01 22:01:14,315 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1879943f
+2022-08-01 22:01:14,319 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration clob -> org.hibernate.type.ClobType@75ff699
+2022-08-01 22:01:14,320 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@75ff699
+2022-08-01 22:01:14,322 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration nclob -> org.hibernate.type.NClobType@39d7900
+2022-08-01 22:01:14,323 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@39d7900
+2022-08-01 22:01:14,325 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@49ec894
+2022-08-01 22:01:14,325 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2f850d05
+2022-08-01 22:01:14,328 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration serializable -> org.hibernate.type.SerializableType@2a1886b8
+2022-08-01 22:01:14,337 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration object -> org.hibernate.type.ObjectType@28859a5e
+2022-08-01 22:01:14,337 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@28859a5e
+2022-08-01 22:01:14,339 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4b9011b4
+2022-08-01 22:01:14,339 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5fb972e5
+2022-08-01 22:01:14,340 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4cb5286
+2022-08-01 22:01:14,340 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@52f55f12
+2022-08-01 22:01:14,340 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@19a3f949
+2022-08-01 22:01:14,341 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@d998ec2
+2022-08-01 22:01:14,341 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5398b295
+2022-08-01 22:01:14,341 DEBUG org.hibernate.type.BasicTypeRegistry [restartedMain] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2b6d7a3b
+2022-08-01 22:01:14,504 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-01 22:01:14,681 DEBUG org.hibernate.type.spi.TypeConfiguration [restartedMain] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3245f9fa] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6eb4b058]
+2022-08-01 22:01:15,467 DEBUG org.hibernate.type.spi.TypeConfiguration [restartedMain] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3245f9fa] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1285ff27]
+2022-08-01 22:01:16,630 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 22:01:16,648 TRACE org.hibernate.type.spi.TypeConfiguration [restartedMain] Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@1285ff27] for TypeConfiguration
+2022-08-01 22:01:16,651 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 22:01:18,662 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 22:01:19,725 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-08-01 22:01:19,982 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2022-08-01 22:01:19,983 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2022-08-01 22:01:19,984 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2022-08-01 22:01:20,857 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-01 22:01:23,433 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2022-08-01 22:01:23,506 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-08-01 22:01:23,511 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started CasestudyAppApplication in 23.08 seconds (JVM running for 24.516)
+2022-08-01 22:01:37,312 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8000-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 22:01:37,313 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8000-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-08-01 22:01:37,354 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8000-exec-2] Completed initialization in 40 ms
+2022-08-01 22:01:37,764 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_id1_1_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,782 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_nam2_1_] : [VARCHAR]) - [Bengaluru]
+2022-08-01 22:01:37,784 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_pin3_1_] : [VARCHAR]) - [590056]
+2022-08-01 22:01:37,784 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_sta4_1_] : [VARCHAR]) - [Karnataka]
+2022-08-01 22:01:37,787 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_id1_1_] : [BIGINT]) - [2]
+2022-08-01 22:01:37,787 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_nam2_1_] : [VARCHAR]) - [Belagavi]
+2022-08-01 22:01:37,788 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_pin3_1_] : [VARCHAR]) - [590059]
+2022-08-01 22:01:37,788 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_sta4_1_] : [VARCHAR]) - [Karnataka]
+2022-08-01 22:01:37,789 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_id1_1_] : [BIGINT]) - [3]
+2022-08-01 22:01:37,789 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_nam2_1_] : [VARCHAR]) - [Maysuru]
+2022-08-01 22:01:37,789 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_pin3_1_] : [VARCHAR]) - [590103]
+2022-08-01 22:01:37,790 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_sta4_1_] : [VARCHAR]) - [Karnataka]
+2022-08-01 22:01:37,814 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.City.theTheaters#1]
+2022-08-01 22:01:37,817 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.City.theTheaters#2]
+2022-08-01 22:01:37,817 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.City.theTheaters#3]
+2022-08-01 22:01:37,948 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [1]
+2022-08-01 22:01:37,967 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:37,969 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_1_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,970 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_2_5_1_] : [VARCHAR]) - [Koramangala]
+2022-08-01 22:01:37,970 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_3_5_1_] : [VARCHAR]) - [Finox mall]
+2022-08-01 22:01:37,972 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_0_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,972 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:37,979 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_1_] : [BIGINT]) - [5]
+2022-08-01 22:01:37,980 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_1_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,980 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_2_5_1_] : [VARCHAR]) - [Koramangala]
+2022-08-01 22:01:37,980 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_3_5_1_] : [VARCHAR]) - [PVR Kormangala]
+2022-08-01 22:01:37,981 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_0_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,983 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_0_] : [BIGINT]) - [5]
+2022-08-01 22:01:37,984 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_1_] : [BIGINT]) - [6]
+2022-08-01 22:01:37,986 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_1_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,987 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_2_5_1_] : [VARCHAR]) - [RD Collage POST]
+2022-08-01 22:01:37,988 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_3_5_1_] : [VARCHAR]) - [Shrinival Theater]
+2022-08-01 22:01:37,988 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_0_] : [BIGINT]) - [1]
+2022-08-01 22:01:37,989 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_0_] : [BIGINT]) - [6]
+2022-08-01 22:01:37,989 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Theater.theShow#4]
+2022-08-01 22:01:37,990 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Theater.theShow#5]
+2022-08-01 22:01:37,990 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Theater.theShow#6]
+2022-08-01 22:01:37,995 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [4]
+2022-08-01 22:01:37,996 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,003 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,004 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [09:00 AM]
+2022-08-01 22:01:38,004 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,005 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,005 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,006 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,006 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [13]
+2022-08-01 22:01:38,007 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,007 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [12:00 PM]
+2022-08-01 22:01:38,007 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,008 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,008 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,008 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [13]
+2022-08-01 22:01:38,009 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [14]
+2022-08-01 22:01:38,009 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,010 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [03:00 PM]
+2022-08-01 22:01:38,010 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,010 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,011 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,012 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [14]
+2022-08-01 22:01:38,013 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [15]
+2022-08-01 22:01:38,013 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,014 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [06:00 PM]
+2022-08-01 22:01:38,014 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,015 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,018 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,019 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [15]
+2022-08-01 22:01:38,020 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [16]
+2022-08-01 22:01:38,021 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,022 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [09:00 PM]
+2022-08-01 22:01:38,022 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,022 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,023 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,023 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [16]
+2022-08-01 22:01:38,024 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [17]
+2022-08-01 22:01:38,024 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,025 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [3:00 PM]
+2022-08-01 22:01:38,025 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,027 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,027 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,028 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [17]
+2022-08-01 22:01:38,029 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [18]
+2022-08-01 22:01:38,030 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,031 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [9:00 PM]
+2022-08-01 22:01:38,031 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,039 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,040 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,040 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [18]
+2022-08-01 22:01:38,041 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [30]
+2022-08-01 22:01:38,043 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,045 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,046 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,046 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,047 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,047 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [30]
+2022-08-01 22:01:38,048 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [34]
+2022-08-01 22:01:38,049 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,050 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,050 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,050 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,051 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [4]
+2022-08-01 22:01:38,052 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [34]
+2022-08-01 22:01:38,052 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#12]
+2022-08-01 22:01:38,063 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#13]
+2022-08-01 22:01:38,064 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#14]
+2022-08-01 22:01:38,066 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#15]
+2022-08-01 22:01:38,068 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#16]
+2022-08-01 22:01:38,070 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#17]
+2022-08-01 22:01:38,070 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#18]
+2022-08-01 22:01:38,070 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#30]
+2022-08-01 22:01:38,071 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#34]
+2022-08-01 22:01:38,078 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [12]
+2022-08-01 22:01:38,079 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([seat_id1_3_1_] : [BIGINT]) - [38]
+2022-08-01 22:01:38,080 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([matrix_x2_3_1_] : [VARCHAR]) - [A]
+2022-08-01 22:01:38,080 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([matrix_y3_3_1_] : [VARCHAR]) - [1]
+2022-08-01 22:01:38,081 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([status4_3_1_] : [INTEGER]) - [0]
+2022-08-01 22:01:38,082 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_show5_3_1_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,082 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_show5_3_0_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,083 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([seat_id1_3_0_] : [BIGINT]) - [38]
+2022-08-01 22:01:38,083 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([seat_id1_3_1_] : [BIGINT]) - [39]
+2022-08-01 22:01:38,084 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([matrix_x2_3_1_] : [VARCHAR]) - [A]
+2022-08-01 22:01:38,084 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([matrix_y3_3_1_] : [VARCHAR]) - [2]
+2022-08-01 22:01:38,084 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([status4_3_1_] : [INTEGER]) - [0]
+2022-08-01 22:01:38,085 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_show5_3_1_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,085 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_show5_3_0_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,086 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([seat_id1_3_0_] : [BIGINT]) - [39]
+2022-08-01 22:01:38,086 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([seat_id1_3_1_] : [BIGINT]) - [40]
+2022-08-01 22:01:38,086 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([matrix_x2_3_1_] : [VARCHAR]) - [A]
+2022-08-01 22:01:38,087 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([matrix_y3_3_1_] : [VARCHAR]) - [3]
+2022-08-01 22:01:38,087 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([status4_3_1_] : [INTEGER]) - [0]
+2022-08-01 22:01:38,087 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_show5_3_1_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,087 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_show5_3_0_] : [BIGINT]) - [12]
+2022-08-01 22:01:38,088 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([seat_id1_3_0_] : [BIGINT]) - [40]
+2022-08-01 22:01:38,090 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [13]
+2022-08-01 22:01:38,091 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [14]
+2022-08-01 22:01:38,092 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [15]
+2022-08-01 22:01:38,092 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [16]
+2022-08-01 22:01:38,093 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [17]
+2022-08-01 22:01:38,093 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [18]
+2022-08-01 22:01:38,094 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [30]
+2022-08-01 22:01:38,094 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [34]
+2022-08-01 22:01:38,095 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [5]
+2022-08-01 22:01:38,095 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [19]
+2022-08-01 22:01:38,096 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,096 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [9:00 AM]
+2022-08-01 22:01:38,096 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,096 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,096 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,097 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [19]
+2022-08-01 22:01:38,097 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [20]
+2022-08-01 22:01:38,097 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,097 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [9:00 PM]
+2022-08-01 22:01:38,099 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,099 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,100 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,101 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [20]
+2022-08-01 22:01:38,101 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [29]
+2022-08-01 22:01:38,102 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,103 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,103 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,104 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,104 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,104 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [29]
+2022-08-01 22:01:38,105 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [35]
+2022-08-01 22:01:38,105 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,106 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,106 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,106 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,107 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [5]
+2022-08-01 22:01:38,107 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [35]
+2022-08-01 22:01:38,108 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#19]
+2022-08-01 22:01:38,109 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#20]
+2022-08-01 22:01:38,110 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#29]
+2022-08-01 22:01:38,111 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#35]
+2022-08-01 22:01:38,113 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [19]
+2022-08-01 22:01:38,114 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [20]
+2022-08-01 22:01:38,116 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [29]
+2022-08-01 22:01:38,117 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [35]
+2022-08-01 22:01:38,118 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [6]
+2022-08-01 22:01:38,120 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [21]
+2022-08-01 22:01:38,121 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,121 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [9:00 PM]
+2022-08-01 22:01:38,121 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,121 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [6]
+2022-08-01 22:01:38,121 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [6]
+2022-08-01 22:01:38,121 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [21]
+2022-08-01 22:01:38,122 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [28]
+2022-08-01 22:01:38,123 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,123 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,124 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,124 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [6]
+2022-08-01 22:01:38,125 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [6]
+2022-08-01 22:01:38,125 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [28]
+2022-08-01 22:01:38,126 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [36]
+2022-08-01 22:01:38,127 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,127 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,128 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,128 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [6]
+2022-08-01 22:01:38,129 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [6]
+2022-08-01 22:01:38,129 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [36]
+2022-08-01 22:01:38,129 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#21]
+2022-08-01 22:01:38,129 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#28]
+2022-08-01 22:01:38,130 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#36]
+2022-08-01 22:01:38,130 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [21]
+2022-08-01 22:01:38,131 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [28]
+2022-08-01 22:01:38,136 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [36]
+2022-08-01 22:01:38,138 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [2]
+2022-08-01 22:01:38,139 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_1_] : [BIGINT]) - [7]
+2022-08-01 22:01:38,139 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_1_] : [BIGINT]) - [2]
+2022-08-01 22:01:38,140 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_2_5_1_] : [VARCHAR]) - [Head post office]
+2022-08-01 22:01:38,140 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_3_5_1_] : [VARCHAR]) - [INOX Cinema]
+2022-08-01 22:01:38,140 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_0_] : [BIGINT]) - [2]
+2022-08-01 22:01:38,140 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_0_] : [BIGINT]) - [7]
+2022-08-01 22:01:38,141 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_1_] : [BIGINT]) - [8]
+2022-08-01 22:01:38,141 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_1_] : [BIGINT]) - [2]
+2022-08-01 22:01:38,141 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_2_5_1_] : [VARCHAR]) - [Goods shed Road]
+2022-08-01 22:01:38,142 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_3_5_1_] : [VARCHAR]) - [Chitra Theater]
+2022-08-01 22:01:38,142 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_0_] : [BIGINT]) - [2]
+2022-08-01 22:01:38,142 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_0_] : [BIGINT]) - [8]
+2022-08-01 22:01:38,142 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Theater.theShow#7]
+2022-08-01 22:01:38,143 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Theater.theShow#8]
+2022-08-01 22:01:38,143 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [7]
+2022-08-01 22:01:38,144 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [22]
+2022-08-01 22:01:38,145 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,145 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [9:00 PM]
+2022-08-01 22:01:38,145 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,145 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [7]
+2022-08-01 22:01:38,146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [7]
+2022-08-01 22:01:38,146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [22]
+2022-08-01 22:01:38,146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [27]
+2022-08-01 22:01:38,147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [7]
+2022-08-01 22:01:38,148 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [7]
+2022-08-01 22:01:38,148 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [27]
+2022-08-01 22:01:38,149 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#22]
+2022-08-01 22:01:38,151 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#27]
+2022-08-01 22:01:38,153 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [22]
+2022-08-01 22:01:38,155 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [27]
+2022-08-01 22:01:38,156 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [8]
+2022-08-01 22:01:38,156 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [23]
+2022-08-01 22:01:38,157 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,157 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [9:00 PM]
+2022-08-01 22:01:38,157 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,158 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [8]
+2022-08-01 22:01:38,158 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [8]
+2022-08-01 22:01:38,158 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [23]
+2022-08-01 22:01:38,159 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [26]
+2022-08-01 22:01:38,159 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,159 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,159 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,160 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [8]
+2022-08-01 22:01:38,160 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [8]
+2022-08-01 22:01:38,160 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [26]
+2022-08-01 22:01:38,161 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#23]
+2022-08-01 22:01:38,161 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#26]
+2022-08-01 22:01:38,163 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [23]
+2022-08-01 22:01:38,164 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [26]
+2022-08-01 22:01:38,167 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [3]
+2022-08-01 22:01:38,169 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_1_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,171 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_1_] : [BIGINT]) - [3]
+2022-08-01 22:01:38,173 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_2_5_1_] : [VARCHAR]) - [Old school theater road]
+2022-08-01 22:01:38,174 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_3_5_1_] : [VARCHAR]) - [Rajkamal theater]
+2022-08-01 22:01:38,175 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([city_cit4_5_0_] : [BIGINT]) - [3]
+2022-08-01 22:01:38,177 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([theater_1_5_0_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,178 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Theater.theShow#9]
+2022-08-01 22:01:38,181 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [9]
+2022-08-01 22:01:38,183 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [24]
+2022-08-01 22:01:38,186 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,187 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [3:00 PM]
+2022-08-01 22:01:38,188 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,189 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,190 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,191 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [24]
+2022-08-01 22:01:38,192 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [25]
+2022-08-01 22:01:38,194 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,194 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,194 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [11]
+2022-08-01 22:01:38,195 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,196 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,197 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [25]
+2022-08-01 22:01:38,197 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [32]
+2022-08-01 22:01:38,201 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,202 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,203 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,208 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,209 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,214 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [32]
+2022-08-01 22:01:38,218 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_1_] : [BIGINT]) - [33]
+2022-08-01 22:01:38,219 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_dat2_4_1_] : [TIMESTAMP]) - [2022-08-01 00:00:00.0]
+2022-08-01 22:01:38,220 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_tim3_4_1_] : [VARCHAR]) - [6:00 PM]
+2022-08-01 22:01:38,220 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_movi4_4_1_] : [BIGINT]) - [10]
+2022-08-01 22:01:38,220 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_1_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,221 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([the_thea5_4_0_] : [BIGINT]) - [9]
+2022-08-01 22:01:38,223 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-2] extracted value ([show_id1_4_0_] : [BIGINT]) - [33]
+2022-08-01 22:01:38,223 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#24]
+2022-08-01 22:01:38,224 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#25]
+2022-08-01 22:01:38,227 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#32]
+2022-08-01 22:01:38,229 TRACE org.hibernate.type.CollectionType [http-nio-8000-exec-2] Created collection wrapper: [com.sapient.model.Show.seats#33]
+2022-08-01 22:01:38,231 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [24]
+2022-08-01 22:01:38,236 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [25]
+2022-08-01 22:01:38,239 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [32]
+2022-08-01 22:01:38,241 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-2] binding parameter [1] as [BIGINT] - [33]
+2022-08-01 22:02:08,205 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-7] binding parameter [1] as [BIGINT] - [1]
+2022-08-01 22:02:08,207 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-7] binding parameter [2] as [VARCHAR] - [WAR 3]
+2022-08-01 22:02:08,207 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-7] binding parameter [3] as [VARCHAR] - [6:00 PM]
+2022-08-01 22:02:08,208 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8000-exec-7] binding parameter [4] as [VARCHAR] - [2022-08-01]
+2022-08-01 22:02:08,223 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_ID] : [NUMERIC]) - [4]
+2022-08-01 22:02:08,224 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_NAME] : [VARCHAR]) - [Finox mall]
+2022-08-01 22:02:08,224 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_AREA] : [VARCHAR]) - [Koramangala]
+2022-08-01 22:02:08,225 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_ID] : [NUMERIC]) - [5]
+2022-08-01 22:02:08,225 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_NAME] : [VARCHAR]) - [PVR Kormangala]
+2022-08-01 22:02:08,226 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_AREA] : [VARCHAR]) - [Koramangala]
+2022-08-01 22:02:08,227 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_ID] : [NUMERIC]) - [6]
+2022-08-01 22:02:08,227 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_NAME] : [VARCHAR]) - [Shrinival Theater]
+2022-08-01 22:02:08,228 TRACE org.hibernate.type.descriptor.sql.BasicExtractor [http-nio-8000-exec-7] extracted value ([THEATER_AREA] : [VARCHAR]) - [RD Collage POST]
+2022-08-01 22:02:08,232 INFO com.sapient.service.TheaterService [http-nio-8000-exec-7] Theater Size received:3
+2022-08-01 22:02:28,002 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-01 22:02:28,014 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 22:02:28,014 TRACE org.hibernate.type.spi.TypeConfiguration [SpringContextShutdownHook] Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@1285ff27] for TypeConfiguration
+2022-08-01 22:02:28,015 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope [SpringContextShutdownHook] Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@74f2f170] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1285ff27]
+2022-08-01 22:02:28,228 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringContextShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-08-01 22:02:28,229 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-08-01 22:02:28,292 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
