@@ -1,0 +1,740 @@
+/ 20220801160948
+// http://localhost:8000/v3/api-docs/
+
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Api Documentation",
+    "description": "Api Documentation",
+    "termsOfService": "urn:tos",
+    "contact": {
+      
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000",
+      "description": "Inferred Url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "b-2-b-controller",
+      "description": "B 2 B Controller"
+    },
+    {
+      "name": "b-2-c-contoller",
+      "description": "B 2 C Contoller"
+    }
+  ],
+  "paths": {
+    "/api/city": {
+      "post": {
+        "tags": [
+          "b-2-b-controller"
+        ],
+        "summary": "createCity",
+        "operationId": "createCityUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/City"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/City"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/movie": {
+      "post": {
+        "tags": [
+          "b-2-b-controller"
+        ],
+        "summary": "createMovie",
+        "operationId": "createMovieUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Movie"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Movie"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/{ID}/{movie_id}/createShow": {
+      "post": {
+        "tags": [
+          "b-2-b-controller"
+        ],
+        "summary": "addShowToTheaterForMovie",
+        "operationId": "addShowToTheaterForMovieUsingPOST",
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "ID",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "movie_id",
+            "in": "path",
+            "description": "movie_id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Show"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/{ID}/{movie_id}/deleteShow": {
+      "post": {
+        "tags": [
+          "b-2-b-controller"
+        ],
+        "summary": "deleteShowToTheaterForMovie",
+        "operationId": "deleteShowToTheaterForMovieUsingPOST",
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "ID",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "movie_id",
+            "in": "path",
+            "description": "movie_id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Show"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/{ID}/{movie_id}/updateshow": {
+      "post": {
+        "tags": [
+          "b-2-b-controller"
+        ],
+        "summary": "updateShowToTheaterForMovie",
+        "operationId": "updateShowToTheaterForMovieUsingPOST",
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "ID",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "movie_id",
+            "in": "path",
+            "description": "movie_id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Show"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/{city}/theater": {
+      "post": {
+        "tags": [
+          "b-2-b-controller"
+        ],
+        "summary": "createTheaterInCity",
+        "operationId": "createTheaterInCityUsingPOST",
+        "parameters": [
+          {
+            "name": "city",
+            "in": "path",
+            "description": "city",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Theater"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/city": {
+      "get": {
+        "tags": [
+          "b-2-c-contoller"
+        ],
+        "summary": "getAllCity",
+        "operationId": "getAllCityUsingGET",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/City"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/movie/{ID}/show": {
+      "get": {
+        "tags": [
+          "b-2-c-contoller"
+        ],
+        "summary": "geShowByMovieId",
+        "operationId": "geShowByMovieIdUsingGET",
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "ID",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Show"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/theater/{ID}/movie": {
+      "get": {
+        "tags": [
+          "b-2-c-contoller"
+        ],
+        "summary": "getMovieByTheaterID",
+        "operationId": "getMovieByTheaterIDUsingGET",
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "ID",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Movie"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/{ID}/{movieName}/{showTime}/{showDate}/theater": {
+      "get": {
+        "tags": [
+          "b-2-c-contoller"
+        ],
+        "summary": "getTheatresByMovieAndShowTimings",
+        "operationId": "getTheatresByMovieAndShowTimingsUsingGET",
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "ID",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "movieName",
+            "in": "path",
+            "description": "movieName",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "showTime",
+            "in": "path",
+            "description": "showTime",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "showDate",
+            "in": "path",
+            "description": "showDate",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Theater"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/{id}/theater": {
+      "get": {
+        "tags": [
+          "b-2-c-contoller"
+        ],
+        "summary": "getTheaterInCity",
+        "operationId": "getTheaterInCityUsingGET",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Theater"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "City": {
+        "title": "City",
+        "type": "object",
+        "properties": {
+          "city_id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "city_name": {
+            "type": "string"
+          },
+          "city_pincode": {
+            "type": "string"
+          },
+          "city_state": {
+            "type": "string"
+          },
+          "theTheaters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Theater"
+            }
+          }
+        }
+      },
+      "Movie": {
+        "title": "Movie",
+        "type": "object",
+        "properties": {
+          "movie_description": {
+            "type": "string"
+          },
+          "movie_director": {
+            "type": "string"
+          },
+          "movie_id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "movie_name": {
+            "type": "string"
+          },
+          "theShows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Show"
+            }
+          }
+        }
+      },
+      "Seat": {
+        "title": "Seat",
+        "type": "object",
+        "properties": {
+          "matrix_x": {
+            "type": "string"
+          },
+          "matrix_y": {
+            "type": "string"
+          },
+          "seat_id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "Show": {
+        "title": "Show",
+        "type": "object",
+        "properties": {
+          "seats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Seat"
+            }
+          },
+          "show_Id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "show_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "show_time": {
+            "type": "string"
+          }
+        }
+      },
+      "Theater": {
+        "title": "Theater",
+        "type": "object",
+        "properties": {
+          "theShow": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Show"
+            }
+          },
+          "theater_area": {
+            "type": "string"
+          },
+          "theater_id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "theater_name": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
