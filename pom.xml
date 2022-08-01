@@ -89,30 +89,15 @@
 	</dependencies>
 
 
-
-<!--		<repositories>-->
-<!--			<repository>-->
-<!--			<id>jcenter-snapshots</id>-->
-<!--			<name>jcenter</name>-->
-<!--			<url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>-->
-<!--			</repository>-->
-<!--			<repository>-->
-<!--				<id>w-jcenter-snapshots2</id>-->
-<!--				<name>jcenter</name>-->
-<!--				<url>http://oss.jfrog.org/artifactory/libs-releases/</url>-->
-<!--			</repository>-->
-<!--		</repositories>-->
-
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
 	</build>
-
 
 
 </project>
