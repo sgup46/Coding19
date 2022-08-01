@@ -1,18 +1,14 @@
 package com.sapient.controller;
 
-import com.sapient.model.City;
-import com.sapient.model.Movie;
-import com.sapient.model.Show;
-import com.sapient.model.Theater;
+import com.sapient.exception.TicketBookingException;
+import com.sapient.model.*;
 import com.sapient.service.*;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -101,6 +97,17 @@ public class B2CContoller {
 		return ((TheaterService)theTheaterService).getTheatresByMovieAndShowTimings(ID , movieName, showTime, showDate);
 	}
 
+	/**
+	 * Yet to  be implemented
+	 * @param id
+	 * @param b
+	 * @return
+	 */
+	@PostMapping("show/{id}/bookings")
+	public Booking bookSeatForShow(@PathVariable (value = "id") long id, @Valid @RequestBody Booking b)
+	{
+		throw new TicketBookingException("Not implemented Exception");
+	}
 	
 }
 

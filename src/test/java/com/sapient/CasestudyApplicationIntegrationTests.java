@@ -31,7 +31,7 @@ class CasestudyApplicationIntegrationTests {
 
 	@Test
 	public void testB2CContollerGetTheatresByMovieAndShowTimings() {
-		List<Theater> theatres =  b2CContoller.getTheatresByMovieAndShowTimings(1, "WAR 3", "6:00 PM", "2022-07-31");
+		List<Theater> theatres =  b2CContoller.getTheatresByMovieAndShowTimings(1, "WAR 3", "6:00 PM", "2022-08-01");
 		Assertions.assertNotNull(theatres.get(0).getTheater_id());
 		Assertions.assertNotNull(theatres.get(0).getTheater_name());
 		Assertions.assertNotNull(theatres.get(0).getTheater_name().equals("Finox mall"));
