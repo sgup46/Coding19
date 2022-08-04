@@ -11,6 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 
@@ -31,7 +34,8 @@ class CasestudyApplicationIntegrationTests {
 
 	@Test
 	public void testB2CContollerGetTheatresByMovieAndShowTimings() {
-		List<Theater> theatres =  b2CContoller.getTheatresByMovieAndShowTimings(1, "WAR 3", "6:00 PM", "2022-08-01");
+		List<Theater> theatres =  b2CContoller.getTheatresByMovieAndShowTimings(1, "WAR 3",
+				"6:00 PM", LocalDate.now().toString());
 		Assertions.assertNotNull(theatres.get(0).getTheater_id());
 		Assertions.assertNotNull(theatres.get(0).getTheater_name());
 		Assertions.assertNotNull(theatres.get(0).getTheater_name().equals("Finox mall"));
